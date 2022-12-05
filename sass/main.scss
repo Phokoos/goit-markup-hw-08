@@ -1,6 +1,7 @@
 // utils styles
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/placeholders';
 
 // base styles
 @import './base/base';
@@ -8,10 +9,8 @@
 
 // components styles
 @import './components/section';
-@import './components/container';
 @import './components/btn';
 @import './components/links';
-@import './components/header';
 @import './components/nav';
 @import './components/logo';
 @import './components/contacts';
@@ -26,3 +25,7 @@
 @import './components/clients';
 @import './components/portfolio-works';
 @import './components/modals';
+
+// layaut style
+@import './layaut/mobile-menu';
+@import './layaut/header';

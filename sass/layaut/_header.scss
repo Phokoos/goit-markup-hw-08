@@ -1,0 +1,43 @@
+// .header {
+// 	background-color: var(--primary-white-color);
+// 	border-bottom: 1px solid var(--header-border);
+// }
+
+// .header-nav {
+// 	display: flex;
+// 	align-items: center;
+// }
+
+
+// New style
+
+//for menu
+.header {
+	background-color: var(--primary-white-color);
+}
+
+.header__container {
+	@extend %container;
+
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 60px;	
+	display: flex;
+	align-items: center;
+}
+
+.header_btn{
+	margin-left: auto;
+}
+//end menu
+
+.header__menu-icon {
+	margin-left: auto;
+
+	fill: var(--title-text-color);
+}
+
+// Посилання в хедері
+.header__link{
+	display: none;
+}
