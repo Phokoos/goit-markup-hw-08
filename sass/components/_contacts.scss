@@ -1,0 +1,44 @@
+/* 
+==============
+Стилі для електронки та телефону із хедеру
+==============
+*/
+
+.link-mail,
+.link-phone {
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	display: flex;
+	align-items: center;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.15;
+	letter-spacing: 0.02em;
+
+	text-decoration: none;
+	color: var(--primary-text-color);
+	transition-property: color;
+	transition-duration: var(--primary-animation-time);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-mail {
+	margin-left: auto;
+	margin-right: 50px;
+}
+
+.link-phone {}
+
+.header .icon {
+	margin-right: 10px;
+}
+
+.icon-mail {
+	fill: currentColor;
+}
+
+.icon-smartphone {
+	fill: currentColor;
+}

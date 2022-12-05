@@ -1,0 +1,39 @@
+/* 
+==============
+Стилі для наших переваг
+==============
+*/
+
+.advantages-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.advantages-item {
+	flex-basis: calc((100% - 3*30px)/4);
+}
+
+.advantages-icon {
+	margin-bottom: 30px;
+
+	display: flex;
+	height: 120px;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 4px;
+	background-color: var(--secondary-background-color);
+}
+
+
+.advantages-item-title {
+	margin-bottom: 10px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+
+	color: var(--title-text-color);
+}

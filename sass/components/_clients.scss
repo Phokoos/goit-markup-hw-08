@@ -1,0 +1,65 @@
+/* 
+==============
+	Стилі для групи постійних клієнтів
+==============
+*/
+
+.clients {
+	padding-bottom: 87px;
+}
+
+.clients-title {
+	margin-bottom: 50px;
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: var(--title-text-color);
+}
+
+.clients-list {
+	display: flex;
+	gap: 30px;
+
+}
+
+.clients-item {
+	height: 92px;
+	flex-basis: calc((100% - 5*30px)/6);
+
+	color: var(--primary-icon-color);
+}
+
+.link-company {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid var(--primary-icon-color);
+	border-radius: 4px;
+
+	text-decoration: none;
+	color: inherit;
+	transition-property: border-color, color;
+	transition-duration: var(--primary-animation-time);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:focus-visible {
+		outline: none;
+	}
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+		border-color: var(--accent-color);
+	}
+}
+
+.company-icon {
+	fill: currentColor;
+}
