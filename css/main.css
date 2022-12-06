@@ -52,6 +52,10 @@ body {
   margin-right: auto;
 }
 
+.btn {
+  text-decoration: none;
+}
+
 /* 
 =====================
 Збиваєм відступи h,p,img,list
@@ -91,10 +95,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
-}
-
-.nav__list {
-  display: none;
 }
 
 .nav__logo {
@@ -215,11 +215,6 @@ Socials for footer
     display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -285,6 +280,9 @@ Socials for footer
 .header__menu-icon {
   margin-left: auto;
   fill: var(--title-text-color);
+}
+.header_btn:hover .header__menu-icon, .header_btn:focus .header__menu-icon {
+  fill: var(--accent-color);
 }
 
 .header__link {

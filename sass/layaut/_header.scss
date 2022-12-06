@@ -28,6 +28,8 @@
 
 .header_btn{
 	margin-left: auto;
+
+	
 }
 //end menu
 
@@ -35,6 +37,11 @@
 	margin-left: auto;
 
 	fill: var(--title-text-color);
+
+	.header_btn:hover &,
+	.header_btn:focus &{
+		fill: var(--accent-color);
+	}
 }
 
 // Посилання в хедері
