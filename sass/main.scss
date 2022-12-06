@@ -7,6 +7,10 @@
 @import './base/base';
 @import './base/reset';
 
+// layaut style
+@import './layaut/menu';
+@import './layaut/header';
+
 // components styles
 @import './components/section';
 @import './components/btn';
@@ -26,6 +30,3 @@
 @import './components/portfolio-works';
 @import './components/modals';
 
-// layaut style
-@import './layaut/mobile-menu';
-@import './layaut/header';

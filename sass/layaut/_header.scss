@@ -12,24 +12,31 @@
 // New style
 
 //for menu
+
 .header {
 	background-color: var(--primary-white-color);
+	
 }
 
 .header__container {
 	@extend %container;
+	position: relative;
+
 
 	padding-left: 15px;
 	padding-right: 15px;
 	height: 60px;	
 	display: flex;
 	align-items: center;
+
 }
 
 .header_btn{
 	margin-left: auto;
 
-	
+	@media (min-width: 768px){
+		display: none;
+	}
 }
 //end menu
 
@@ -42,9 +49,4 @@
 	.header_btn:focus &{
 		fill: var(--accent-color);
 	}
-}
-
-// Посилання в хедері
-.header__link{
-	display: none;
 }

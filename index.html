@@ -62,53 +62,57 @@
             +38 096 111 11 11
           </a>
         </ul>
+        <!-- Mobile menu -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="header_btn menu-toggle js-close-menu btn">
+            <svg class="header__menu-icon" width="40" height="40">
+              <use href="./images/icon/sprite.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu">
+            <div class="mobile-menu__wrapper">
+              <nav class="nav">
+                <ul class="list nav__list">
+                  <li class="nav__item nav__item--current-page">
+                    <a class="nav__link link" href="./index.html">Студія</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="./portfolio.html">Портфоліо</a>
+                  </li>
+                  <li class="nav__item"><a class="nav__link link" href="">Контакти</a></li>
+                </ul>
+              </nav>
+              <div class="mobile-menu__wrappew-bottom">
+                <a class="mobile-menu__phone link" href="tel:380961111111">+38 096 111 11 11 </a>
+                <a class="mobile-menu__email link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
+                <ul class="mobile-menu__socials-list list">
+                  <li class="mobile-menu__socials-item">Instagram</li>
+                  <li class="mobile-menu__socials-item">Twitter</li>
+                  <li class="mobile-menu__socials-item">Facebook</li>
+                  <li class="mobile-menu__socials-item">LinkedIn</li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </div>
       </div>
     </header>
 
-    <!-- Mobile menu -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="header_btn menu-toggle js-close-menu btn">
-        <svg class="header__menu-icon" width="40" height="40">
-          <use href="./images/icon/sprite.svg#icon-close-menu"></use>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu">
-        <nav class="nav">
-          <ul class="list nav__list">
-            <li class="nav__item nav__item--current-page">
-              <a class="nav__link" href="./index.html">Студія</a>
-            </li>
-            <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
-          </ul>
-        </nav>
-        <a class="header__link link" href="mailto:info@devstudio.com">
-          <svg class="icon header__icon" width="16" height="12">
-            <use href="./images/icon/sprite.svg#icon-mail"></use>
-          </svg>
-          info@devstudio.com
-        </a>
-        <a class="header__link link" href="tel:380961111111">
-          <svg class="icon header__icon" width="10" height="16">
-            <use href="./images/icon/sprite.svg#icon-smartphone"></use>
-          </svg>
-          +38 096 111 11 11
-        </a>
-      </ul>
-    </div>
     <!-- Close with btn -->
 
     <!-- Основний контент -->
     <main>
       <!-- Герой -->
-      <!-- <section class="hero hero-grad">
-        <h1 class="hero-title">
+      <section class="hero">
+        <h1 class="hero__title">
           Ефективні рішення для <br />
           вашого бізнесу
         </h1>
-        <button data-modal-open class="hero-btn btn" type="button">Замовити послугу</button>
-      </section> -->
+        <button data-modal-open class="hero__btn btn" type="button">Замовити послугу</button>
+      </section>
       <!-- Наші переваги -->
       <!-- <section class="advantages section">
         <div class="container">
@@ -518,21 +522,21 @@
 		Modal window
 		==================
 	  -->
-    <!-- <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button data-modal-close class="modal-btn" type="button">
-          <svg class="icon icon-close" width="11" height="11">
+        <button data-modal-close class="modal__btn btn" type="button">
+          <svg class="icon modal__close" width="11" height="11">
             <use href="./images/icon/sprite.svg#icon-close"></use>
           </svg>
         </button>
 
-        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-        <form class="modal-form" name="modal-form">
-          <div class="modal-form-group" role="group">
-            <label class="modal-form-label" for="user_name">Ім'я</label>
-            <div class="modal-form-wrapper">
+        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal__form form" name="modal-form">
+          <div class="form__group" role="group">
+            <label class="form__label" for="user_name">Ім'я</label>
+            <div class="form__wrapper">
               <input
-                class="modal-form-field"
+                class="form__field"
                 type="text"
                 name="user_name"
                 id="user_name"
@@ -540,59 +544,59 @@
                 minlength="3"
                 placeholder=" "
               />
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="form__icon" width="18" height="18">
                 <use href="./images/icon/sprite.svg#icon-person"></use>
               </svg>
             </div>
-            <label class="modal-form-label" for="user_phone">Телефон</label>
-            <div class="modal-form-wrapper">
+            <label class="form__label" for="user_phone">Телефон</label>
+            <div class="form__wrapper">
               <input
-                class="modal-form-field"
+                class="form__field"
                 type="tel"
                 name="user_phone"
                 id="user_phone"
                 placeholder=" "
               />
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="form__icon" width="18" height="18">
                 <use href="./images/icon/sprite.svg#icon-phone"></use>
               </svg>
             </div>
-            <label class="modal-form-label" for="user_mail">Пошта</label>
-            <div class="modal-form-wrapper">
+            <label class="form__label" for="user_mail">Пошта</label>
+            <div class="form__wrapper">
               <input
-                class="modal-form-field"
+                class="form__field"
                 type="text"
                 name="user_mail"
                 id="user_mail"
                 placeholder=" "
               />
-              <svg class="modal-form-icon" width="18" height="18">
+              <svg class="form__icon" width="18" height="18">
                 <use href="./images/icon/sprite.svg#icon-email"></use>
               </svg>
             </div>
-            <label class="modal-form-label" for="user_message">Коментар</label>
+            <label class="form__label" for="user_message">Коментар</label>
             <textarea
-              class="modal-form-message"
+              class="form__message"
               name="user_message"
               id="user_message"
               rows="6"
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <div class="modal-form-agreement" role="group">
-            <input class="modal-form-checkbox" type="checkbox" id="user_agreement" />
-            <svg class="modal-form-agreement-icon" width="11" height="8">
+          <div class="form__agreement" role="group">
+            <input class="form__checkbox" type="checkbox" id="user_agreement" />
+            <svg class="form__agreement-icon" width="11" height="8">
               <use href="./images/icon/sprite.svg#icon-check"></use>
             </svg>
-            <label class="modal-form-agreement-desc" for="user_agreement">
+            <label class="form__agreement-desc" for="user_agreement">
               Погоджуюся з розсилкою та приймаю
-              <a class="modal-form-agreement-link" href="">Умови договору</a>
+              <a class="form__agreement-link" href="">Умови договору</a>
             </label>
           </div>
-          <button class="modal-form-btn btn" type="submit">Відправити</button>
+          <button class="modal__submit btn" type="submit">Відправити</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script
       defer
