@@ -1,6 +1,10 @@
 %container {
 	margin-left: auto;
 	margin-right: auto;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-right: 15px;
+	padding-left: 15px;
 
 	@media (max-width: 767px) {
 		max-width: 480px;	
@@ -14,7 +18,7 @@
 		width: 1200px;	
 	}
 
-	outline: 2px dashed red;
+	// outline: 2px dashed red;
 }
 
 %start-btn{

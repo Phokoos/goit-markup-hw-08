@@ -26,23 +26,26 @@
   clip: rect(0 0 0 0);
 }
 
-.hero, .header__container {
+.team__container, .advantages__container, .hero, .header__container {
   margin-left: auto;
   margin-right: auto;
-  outline: 2px dashed red;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 @media (max-width: 767px) {
-  .hero, .header__container {
+  .team__container, .advantages__container, .hero, .header__container {
     max-width: 480px;
   }
 }
 @media (min-width: 768px) {
-  .hero, .header__container {
+  .team__container, .advantages__container, .hero, .header__container {
     width: 768px;
   }
 }
 @media (min-width: 1200px) {
-  .hero, .header__container {
+  .team__container, .advantages__container, .hero, .header__container {
     width: 1200px;
   }
 }
@@ -223,8 +226,7 @@ img {
 
 .header__container {
   position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,6 +248,8 @@ img {
 .header__menu-icon {
   margin-left: auto;
   fill: var(--title-text-color);
+  -webkit-transition: opacity var(--primary-animation-time) var(--primary-animation-function);
+  transition: opacity var(--primary-animation-time) var(--primary-animation-function);
 }
 .header_btn:hover .header__menu-icon, .header_btn:focus .header__menu-icon {
   fill: var(--accent-color);
@@ -330,6 +334,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile-menu__socials-item {
@@ -350,6 +356,51 @@ img {
   right: -10px;
   width: 1px;
   height: 100%;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--primary-icon-color);
+  border-radius: 50%;
+  text-decoration: none;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: var(--primary-animation-time);
+          transition-duration: var(--primary-animation-time);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*
@@ -461,6 +512,10 @@ Socials for footer
           user-select: none;
 }
 
+.checkbox__wrapper {
+  position: relative;
+}
+
 .form__checkbox {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -484,10 +539,10 @@ Socials for footer
 
 .form__agreement-icon {
   position: absolute;
-  top: 50%;
+  top: 8px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 9px;
+  left: 3px;
   fill: var(--primary-white-color);
   opacity: 0;
   pointer-events: none;
@@ -518,11 +573,18 @@ Socials for footer
 ==============
 */
 .hero {
+  padding-right: 0;
+  padding-left: 0;
   padding: 118px 0;
   height: 400px;
   text-align: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/image-480.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/image-480.jpg");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero/image-960.jpg");
+  }
 }
 
 .hero__title {
@@ -540,6 +602,45 @@ Socials for footer
 Стилі для наших переваг
 ==============
 */
+.advantages {
+  background-color: var(--primary-white-color);
+}
+
+.advantages__icon {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 120px;
+  background-color: var(--primary-background-color);
+  border-radius: 4px;
+}
+
+.advantages__item-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.advantages__text {
+  font-size: 14px;
+  line-height: 1.7142857143;
+}
+.advantages__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 /* 
 ==============
 Чим ми займаймось
@@ -550,6 +651,49 @@ Socials for footer
 Наша команда
 ==============
 */
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.team__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785714286;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.team__item {
+  text-align: center;
+  background-color: var(--primary-white-color);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.team__desc {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+.team__item-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  color: var(--title-text-color);
+}
+
+.team__text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.1875;
+}
+
 /* 
 ==============
 	Стилі для групи постійних клієнтів
@@ -594,7 +738,7 @@ Socials for footer
           transform: translate(-50%, -50%);
   padding: 40px;
   width: 450px;
-  height: 609px;
+  max-width: 95vw;
   background-color: var(--primary-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

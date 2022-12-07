@@ -5,6 +5,7 @@
 	display: flex;
 	gap: 20px;
 	align-items: center;
+	flex-wrap: wrap;
 }
 		
 .mobile-menu__socials-item {
@@ -31,6 +32,65 @@
     	height: 100%;
 	}
 }
+
+// Соціальні мережі для Нашої команди
+
+.social__list {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+
+.social__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+
+	fill: var(--primary-icon-color);
+	border-radius: 50%;
+	text-decoration: none;
+	transition-property: color, background-color;
+	transition-duration: var(--primary-animation-time);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	// &:focus-visible {
+	// 	outline: none;
+	// }
+
+	// &:hover,
+	// &:focus {
+	// 	background-color: var(--accent-color);
+	// 	color: var(--primary-white-color);
+	// }
+}
+
+.social__icon {
+	
+}
+
+
+.icon-instagram {
+}
+.icon-twitter {
+}
+.icon-facebook {
+}
+.icon-linkedin {
+}
+
+// Socials for team
+
+// .social-icon {
+// 	fill: currentColor;
+// }
 
 
 /*
@@ -70,46 +130,3 @@ Socials for footer
 // 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 // }
 
-// Socials for team
-
-// .social-list-links {
-// 	margin-top: 16px;
-// 	display: flex;
-// 	gap: 10px;
-// 	justify-content: center;
-// }
-
-// .social-list-item {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// }
-
-// .social-link {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	width: 44px;
-// 	height: 44px;
-
-// 	color: var(--primary-icon-color);
-// 	border-radius: 50%;
-// 	text-decoration: none;
-// 	transition-property: color, background-color;
-// 	transition-duration: var(--primary-animation-time);
-// 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-// 	&:focus-visible {
-// 		outline: none;
-// 	}
-
-// 	&:hover,
-// 	&:focus {
-// 		background-color: var(--accent-color);
-// 		color: var(--primary-white-color);
-// 	}
-// }
-
-// .social-icon {
-// 	fill: currentColor;
-// }

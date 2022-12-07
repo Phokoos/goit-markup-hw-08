@@ -3,6 +3,70 @@
 Наша команда
 ==============
 */
+.team {
+	background-color: var(--secondary-background-color);
+}
+.team__container {
+	@extend %container;
+}
+
+.team__title {
+	margin-bottom: 30px;
+
+	font-weight: 700;
+	font-size: 28px;
+	line-height: calc(33 / 28);
+	text-align: center;
+
+	color: var(--title-text-color);
+
+}
+
+.team__list {
+}
+
+.team__item {
+	text-align: center;
+	background-color: var(--primary-white-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+
+	&:not(:last-child){
+		margin-bottom: 30px;
+	}
+}
+
+.team__img {
+		}
+
+.team__desc {
+	padding-top: 30px;
+	padding-bottom: 24px;
+}
+
+.team__item-title {
+	margin-bottom: 10px;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: calc(19 / 16);
+
+	color: var(--title-text-color);
+}
+
+.team__text {
+	margin-bottom: 16px;
+
+	font-size: 16px;
+	line-height: calc(19 / 16);
+}
+
+.section {
+}
+
+
+
+
 // .team {
 // 	background-color: var(--secondary-background-color);
 // }

@@ -21,10 +21,7 @@
 .header__container {
 	@extend %container;
 	position: relative;
-
-
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 0 15px;
 	height: 60px;	
 	display: flex;
 	align-items: center;
@@ -44,6 +41,8 @@
 	margin-left: auto;
 
 	fill: var(--title-text-color);
+
+	transition: opacity var(--primary-animation-time) var(--primary-animation-function);
 
 	.header_btn:hover &,
 	.header_btn:focus &{
