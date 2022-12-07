@@ -1,28 +1,40 @@
 // Кнопка героя
 .hero__btn {
-	padding: 10px 24px;
-
-	font-weight: 700;
-	font-size: 16px;
-	line-height: calc(30 / 16);
-	text-align: center;
-	letter-spacing: 0.06em;
-
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-	color: var(--primary-white-color);
-	background-color: var(--accent-color);
+	@extend %start-btn;
 }
 
-.modal__btn{
-
+// Кнопка відправлення форми
+.modal__submit {
+	@extend %start-btn;
+	display: block;
+	margin: 0 auto;
 }
 
-.modal__close{
-	
+//Кнопка закриття модалки
+.modal__btn {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 8px;
+	right: 8px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 50%;;
+	background-color: transparent;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+
+	&:hover .modal__close,
+	&:focus .modal__close{
+		fill: var(--accent-color)
+	}
 }
 
-
+.modal__close {
+	fiil: var(--primary-black-color);
+}
 
 //Стилі для кнопки героя
 
