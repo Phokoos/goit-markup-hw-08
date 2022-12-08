@@ -1,0 +1,42 @@
+/* 
+===================
+Підвал
+===================
+ */
+
+ .footer {
+	background-color: var(--accent-background-color);
+
+}
+ .footer__container {
+	@extend %container;
+
+	text-align: center;
+}
+
+.footer-form {
+}
+.footer-form__text {
+}
+
+.footer-form__group {
+}
+
+.footer-form__label {
+}
+
+.footer-form__field {
+}
+
+.footer-form__btn {
+}
+
+.footer-form__icon {
+}
+
+
+
+
+
+
+

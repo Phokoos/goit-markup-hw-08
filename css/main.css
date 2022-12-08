@@ -26,7 +26,7 @@
   clip: rect(0 0 0 0);
 }
 
-.team__container, .advantages__container, .hero, .header__container {
+.clients__container, .team__container, .advantages__container, .hero, .footer__container, .header__container {
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -35,17 +35,17 @@
   padding-left: 15px;
 }
 @media (max-width: 767px) {
-  .team__container, .advantages__container, .hero, .header__container {
+  .clients__container, .team__container, .advantages__container, .hero, .footer__container, .header__container {
     max-width: 480px;
   }
 }
 @media (min-width: 768px) {
-  .team__container, .advantages__container, .hero, .header__container {
+  .clients__container, .team__container, .advantages__container, .hero, .footer__container, .header__container {
     width: 768px;
   }
 }
 @media (min-width: 1200px) {
-  .team__container, .advantages__container, .hero, .header__container {
+  .clients__container, .team__container, .advantages__container, .hero, .footer__container, .header__container {
     width: 1200px;
   }
 }
@@ -255,6 +255,19 @@ img {
   fill: var(--accent-color);
 }
 
+/* 
+===================
+Підвал
+===================
+ */
+.footer {
+  background-color: var(--accent-background-color);
+}
+
+.footer__container {
+  text-align: center;
+}
+
 .modal__submit {
   display: block;
   margin: 0 auto;
@@ -315,16 +328,34 @@ img {
   color: var(--accent-color);
 }
 
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+}
+
 /* 
 ==============
 Стилі для електронки та телефону із хедеру
 ==============
 */
-/* 
-===================
-Підвал
-===================
- */
+.address__list {
+  margin-bottom: 60px;
+  list-style: none;
+  font-style: normal;
+}
+
+.address__item {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.address__link {
+  color: var(--primary-white-color);
+}
+
 .mobile-menu__socials-list {
   margin-top: 64px;
   display: -webkit-box;
@@ -401,6 +432,25 @@ img {
           transition-duration: var(--primary-animation-time);
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__icon {
+  fill: currentColor;
+}
+
+.footer__item {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-white-color);
+}
+
+.social__text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
 }
 
 /*
@@ -699,6 +749,66 @@ Socials for footer
 	Стилі для групи постійних клієнтів
 ==============
 */
+.clients__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785714286;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.clients__item {
+  height: 92px;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
+  color: var(--primary-icon-color);
+}
+
+.clients__company {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid var(--primary-icon-color);
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition-property: border-color, color;
+  transition-property: border-color, color;
+  -webkit-transition-duration: var(--primary-animation-time);
+          transition-duration: var(--primary-animation-time);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__company:focus-visible {
+  outline: none;
+}
+.clients__company:hover, .clients__company:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.clients__icon {
+  fill: currentColor;
+}
+
 /* 
 ==============
 Стилі для основної частини портфоліо
