@@ -10,6 +10,22 @@
 	margin: 0 auto;
 }
 
+// Відправка форми в футері
+
+.footer-form__btn {
+	@extend %start-btn;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.footer-form__icon {
+	margin-left: 12px;
+
+	fill: var(--primary-white-color);
+}
+
 //Кнопка закриття модалки
 .modal__btn {
 	position: absolute;
