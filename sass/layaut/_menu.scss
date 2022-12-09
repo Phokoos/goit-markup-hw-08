@@ -1,13 +1,17 @@
 .menu {
-  display: flex;
-  padding: 15;
-  margin: 0;
+	@media (max-width: 767px) {
+   	display: none;
+  	}
+	display: flex;	
+	padding: 15;
+	margin: 0;
+	margin-left: 87px;
+
   list-style: none;
 
 	background-color: var(--primary-white-color);
 
 }
-
 
 
 .menu-container.is-open {
@@ -96,11 +100,7 @@
 
 
 // Меню таблетки
-@media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-}
+
 
 
 
