@@ -6,10 +6,12 @@
 }
 
 .address__list {
-	margin-bottom: 60px;
-
 	list-style: none;
 	font-style: normal;
+
+	@media screen and (max-width: 767px) {
+	margin-bottom: 60px;
+	}
 }
 
 .address__item {

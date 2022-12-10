@@ -32,6 +32,10 @@
 	flex-basis: calc((100% - 1*30px)/2);
 
 	color: var(--primary-icon-color);
+
+	@media screen and (min-width: 768px) {
+		flex-basis: calc((100% - 2*30px)/3);
+	}
 }
 
 .clients__company {

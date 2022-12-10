@@ -12,9 +12,16 @@
 // }
 
 .header__link-wrapper{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	@media screen and (max-width: 1199px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;	
+		gap: 10px;
+	}
+	// display: flex;
+	// 	flex-direction: column;
+	// 	justify-content: center;
+	// 	gap: 10px;
 }
 
 .header__link{

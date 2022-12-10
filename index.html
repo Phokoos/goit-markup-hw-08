@@ -215,6 +215,11 @@
             <li class="team__item">
               <picture>
                 <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/img_1-t-354.jpg 1x, ./images/team/img_1-t-708.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
                   srcset="./images/team/img_1-450.jpg 1x, ./images/team/img_1-900.jpg 2x"
                   type="image/jpg"
                 />
@@ -222,8 +227,8 @@
                   class="team__img img"
                   src="./images/team/img_1-450.jpg"
                   alt="Перший член команди"
-                  width="450"
-                  height="460"
+                  width="100%"
+                  height="100%"
                 />
               </picture>
               <div class="team__desc">
@@ -264,6 +269,11 @@
             <li class="team__item">
               <picture>
                 <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/img_2-t-354.jpg 1x, ./images/team/img_2-t-708.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
                   srcset="./images/team/img_2-450.jpg 1x, ./images/team/img_2-900.jpg 2x"
                   type="image/jpg"
                 />
@@ -271,8 +281,8 @@
                   class="team__img img"
                   src="./images/team/img_2-450.jpg"
                   alt="Другий  член команди"
-                  width="450"
-                  height="460"
+                  width="100%"
+                  height="100%"
                 />
               </picture>
               <div class="team__desc">
@@ -313,6 +323,11 @@
             <li class="team__item">
               <picture>
                 <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/img_3-t-354.jpg 1x, ./images/team/img_3-t-708.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
                   srcset="./images/team/img_3-450.jpg 1x, ./images/team/img_3-900.jpg 2x"
                   type="image/jpg"
                 />
@@ -320,8 +335,8 @@
                   class="team__img img"
                   src="./images/team/img_3-450.jpg 1x"
                   alt="Третій  член команди"
-                  width="450"
-                  height="460"
+                  width="100%"
+                  height="100%"
                 />
               </picture>
               <div class="team__desc">
@@ -362,6 +377,11 @@
             <li class="team__item">
               <picture>
                 <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/img_4-t-354.jpg 1x, ./images/team/img_4-t-708.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
                   srcset="./images/team/img_4-450.jpg 1x, ./images/team/img_4-900.jpg 2x"
                   type="image/jpg"
                 />
@@ -369,8 +389,8 @@
                   class="team__img img"
                   src="./images/team/img_4-450.jpg"
                   alt="Четвертий  член команди"
-                  width="450"
-                  height="460"
+                  width="100%"
+                  height="100%"
                 />
               </picture>
               <div class="team__desc">
@@ -465,63 +485,65 @@
     <!-- Підвал сторінки -->
     <footer class="footer">
       <div class="footer__container">
-        <div>
-          <a class="nav__logo logo footer__logo link" href="./index.html "
-            ><span class="nav__logo--accent">Web</span>Studio</a
-          >
-          <address class="address">
-            <ul class="list address__list">
-              <li class="address__item address__map">
-                <a
-                  class="address__link link"
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer__contacts">
+          <div class="footer__contacts-wrapper">
+            <a class="nav__logo logo footer__logo link" href="./index.html "
+              ><span class="nav__logo--accent">Web</span>Studio</a
+            >
+            <address class="address">
+              <ul class="list address__list">
+                <li class="address__item address__map">
+                  <a
+                    class="address__link link"
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address__item address_mail">
+                  <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="address__item address__phone">
+                  <a class="link" href="tel:380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <section class="social">
+            <p class="social__text">Приєднуйтесь</p>
+            <ul class="list social__list">
+              <li class="social__item footer__item">
+                <a class="social__link link" href="" aria-label="Instagram">
+                  <svg class="social__icon icon-instagram" width="20" height="20">
+                    <use href="./images/icon/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item address_mail">
-                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="social__item footer__item">
+                <a class="social__link link" href="" aria-label="Twitter">
+                  <svg class="social__icon icon-twitter" width="20" height="20">
+                    <use href="./images/icon/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item address__phone">
-                <a class="link" href="tel:380961111111">+38 096 111 11 11</a>
+              <li class="social__item footer__item">
+                <a class="social__link link" href="" aria-label="Facebook">
+                  <svg class="social__icon icon-facebook" width="20" height="20">
+                    <use href="./images/icon/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item footer__item">
+                <a class="social__link link" href="" aria-label="Linkedin">
+                  <svg class="social__icon icon-linkedin" width="20" height="20">
+                    <use href="./images/icon/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </section>
         </div>
-        <section class="social">
-          <p class="social__text">Приєднуйтесь</p>
-          <ul class="list social__list">
-            <li class="social__item footer__item">
-              <a class="social__link link" href="" aria-label="Instagram">
-                <svg class="social__icon icon-instagram" width="20" height="20">
-                  <use href="./images/icon/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item footer__item">
-              <a class="social__link link" href="" aria-label="Twitter">
-                <svg class="social__icon icon-twitter" width="20" height="20">
-                  <use href="./images/icon/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item footer__item">
-              <a class="social__link link" href="" aria-label="Facebook">
-                <svg class="social__icon icon-facebook" width="20" height="20">
-                  <use href="./images/icon/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item footer__item">
-              <a class="social__link link" href="" aria-label="Linkedin">
-                <svg class="social__icon icon-linkedin" width="20" height="20">
-                  <use href="./images/icon/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </section>
         <form class="footer-form" name="footer-mail">
           <p class="footer-form__text">Підпишіться на розсилку</p>
           <div class="footer-form__group">
