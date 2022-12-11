@@ -143,6 +143,11 @@
 	line-height: calc(14/12);
 
 	color: var(--primary-text-color);
+
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: calc(24 / 14);
+	}
 }
 
 .form__agreement-link {

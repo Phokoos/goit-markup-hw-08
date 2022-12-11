@@ -42,6 +42,8 @@
 	background-color: transparent;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 
+	
+
 	&:hover .modal__close,
 	&:focus .modal__close{
 		fill: var(--accent-color)
@@ -49,7 +51,8 @@
 }
 
 .modal__close {
-	fiil: var(--primary-black-color);
+	transition: color var(--primary-animation-time) var(--primary-animation-function);
+	fill: var(--primary-black-color);
 }
 
 //Стилі для кнопки героя
