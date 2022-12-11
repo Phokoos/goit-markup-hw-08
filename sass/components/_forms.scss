@@ -1,17 +1,5 @@
 // Форма модального вікна
 
-
-.modal__form {
-		}
-
-.modal__submit {
-		}
-
-.form {
-}
-.form__group {
-		}
-
 .form__label {
 	display: block;
 
@@ -156,9 +144,6 @@
 	color: var(--accent-color);
 		}
 
-
-// Form in modal window
-
 /* 
 ======================
 	Форма в футері
@@ -167,7 +152,11 @@
 
 
 .footer-form {
-	margin-top: 60px;
+	padding-top: 60px;
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 12px;
+	}
 }
 .footer-form__text {
 	margin-bottom: 20px;
@@ -181,16 +170,20 @@
 }
 
 .footer-form__group {
-}
-
-.footer-form__label {
+	
+	@media screen and (min-width:1200px) {
+		display: flex;	
+		gap: 12px;
+	}
 }
 
 .footer-form__field {
 	height: 50px;
 	width: 100%;
 	padding: 15px;
-	margin-bottom: 20px;
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 20px;	
+	}
 
 	color: var(--primary-white-color);
 
@@ -209,23 +202,12 @@
 	@media screen and (min-width: 768px) {
 		width: 450px;	
 	}
+	@media screen and (min-width: 1200px) {
+		width: 358px;	
+	}
 
 
 }
-
-
-
-// .footer-mail {
-// 	margin-left: 93px;
-// 	margin-top: 12px;
-// }
-
-// .footer-mail-group {
-// 	display: flex;
-// 	align-items: center;
-// 	justify-content: center;
-// }
-
 
 
 

@@ -170,43 +170,68 @@
         </div>
       </section>
       <!-- Чим ми займаймось -->
-      <!-- <section class="activity section">
-        <div class="container">
-          <h2 class="activity-title">Чим ми займаємося</h2>
-          <ul class="list activity-list">
-            <li class="activity-item">
-              <img
-                class="activity-img"
-                src="./images/img-one.jpg"
-                alt="Людина набирає код на планшеті за допомогою блютуз клавіатури"
-                width="370"
-                height="294"
-              />
-              <p class="activity-text">Десктопні додатки</p>
+      <section class="activity section">
+        <div class="activity__container">
+          <h2 class="activity__title">Чим ми займаємося</h2>
+          <ul class="list activity__list">
+            <li class="activity__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/activity/img_1-d-370.jpg 1x,
+                    ./images/activity/img_1-d-740.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="activity__img"
+                  src="./images/activity/img_1-d-370.jpg"
+                  alt="Людина набирає код на планшеті за допомогою блютуз клавіатури"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+              <p class="activity__text">Десктопні додатки</p>
             </li>
-            <li class="activity-item">
-              <img
-                class="activity-img"
-                src="./images/img-two.jpg"
-                alt="Людина звіряє розроблені макети на ноутбуці"
-                width="370"
-                height="294"
-              />
-              <p class="activity-text">Мобільні додатки</p>
+            <li class="activity__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/activity/img_2-d-370.jpg 1x,
+                    ./images/activity/img_2-d-740.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="activity__img"
+                  src="./images/activity/img_2-d-370.jpg"
+                  alt="Людина звіряє розроблені макети на ноутбуці"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+              <p class="activity__text">Мобільні додатки</p>
             </li>
-            <li class="activity-item">
-              <img
-                class="activity-img"
-                src="./images/img-three.jpg"
-                alt="Людина вибирає кольорову гамму на планшеті"
-                width="370"
-                height="294"
-              />
-              <p class="activity-text">Дизайнерські рішення</p>
+            <li class="activity__item">
+              <picture
+                ><source
+                  srcset="
+                    ./images/activity/img_3-d-370.jpg 1x,
+                    ./images/activity/img_3-d-740.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  class="activity__img"
+                  src="./images/activity/img_3-d-370.jpg"
+                  alt="Людина вибирає кольорову гамму на планшеті"
+                  width="370"
+                  height="294"
+              /></picture>
+              <p class="activity__text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Наша команда -->
       <section class="team section">
         <div class="team__container container">
@@ -214,6 +239,11 @@
           <ul class="list team__list">
             <li class="team__item">
               <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/img_1-d-270.jpg 1x, ./images/team/img_1-d-540.jpg 2x"
+                  type="image/jpg"
+                />
                 <source
                   media="(min-width:768px)"
                   srcset="./images/team/img_1-t-354.jpg 1x, ./images/team/img_1-t-708.jpg 2x"
@@ -269,6 +299,11 @@
             <li class="team__item">
               <picture>
                 <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/img_2-d-270.jpg 1x, ./images/team/img_2-d-540.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
                   media="(min-width:768px)"
                   srcset="./images/team/img_2-t-354.jpg 1x, ./images/team/img_2-t-708.jpg 2x"
                   type="image/jpg"
@@ -323,6 +358,11 @@
             <li class="team__item">
               <picture>
                 <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/img_3-d-270.jpg 1x, ./images/team/img_3-d-540.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
                   media="(min-width:768px)"
                   srcset="./images/team/img_3-t-354.jpg 1x, ./images/team/img_3-t-708.jpg 2x"
                   type="image/jpg"
@@ -376,6 +416,11 @@
             </li>
             <li class="team__item">
               <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/img_4-d-270.jpg 1x, ./images/team/img_4-d-540.jpg 2x"
+                  type="image/jpg"
+                />
                 <source
                   media="(min-width:768px)"
                   srcset="./images/team/img_4-t-354.jpg 1x, ./images/team/img_4-t-708.jpg 2x"

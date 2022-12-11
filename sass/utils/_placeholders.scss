@@ -17,8 +17,6 @@
 	@media (min-width: 1200px){
 		width: 1200px;	
 	}
-
-	// outline: 2px dashed red;
 }
 
 %start-btn{
@@ -35,4 +33,24 @@
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	color: var(--primary-white-color);
 	border-radius: 4px;
+}
+
+%start-d-title{
+	@media screen and (min-width:768px) {
+		margin-bottom: 30px;
+
+		font-weight: 700;
+		font-size: 28px;
+		line-height: calc(33 / 28);
+		text-align: center;
+		color: var(--title-text-color);
+	}
+
+
+	@media screen and (min-width:1200px) {
+		margin-bottom: 50px;
+
+		font-size: 36px;
+		line-height: calc(42 / 36);
+	}
 }

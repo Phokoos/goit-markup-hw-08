@@ -3,22 +3,12 @@
 	Стилі для групи постійних клієнтів
 ==============
 */
-
-.clients {
-}
 .clients__container {
 	@extend %container;
 }
 
 .clients__title {
-	margin-bottom: 30px;
-
-	font-weight: 700;
-	font-size: 28px;
-	line-height: calc(33 / 28);
-	text-align: center;
-
-	color: var(--title-text-color);
+	@extend %start-d-title;
 }
 
 .clients__list {
@@ -35,6 +25,10 @@
 
 	@media screen and (min-width: 768px) {
 		flex-basis: calc((100% - 2*30px)/3);
+	}
+
+	@media screen and (min-width: 1200px) {
+		flex-basis: calc((100% - 5*30px)/6);
 	}
 }
 

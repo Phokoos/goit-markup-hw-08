@@ -45,6 +45,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	border-radius: 50%;
+	color: var(--primary-icon-color);
 }
 
 .social__link {
@@ -54,38 +57,30 @@
 	width: 44px;
 	height: 44px;
 
-	fill: var(--primary-icon-color);
+	fill: currentColor;
 	border-radius: 50%;
 	text-decoration: none;
-	transition-property: color, background-color;
-	transition-duration: var(--primary-animation-time);
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-	// &:focus-visible {
-	// 	outline: none;
-	// }
+	transition-property: color var(--primary-animation-time) var(--primary-animation-function);
+	transition: background-color var(--primary-animation-time) var(--primary-animation-function);
 
-	// &:hover,
-	// &:focus {
-	// 	background-color: var(--accent-color);
-	// 	color: var(--primary-white-color);
-	// }
+
+	@media screen and (min-width:1200px){
+		&:focus-visible {
+		outline: none;
+		}
+		&:hover,
+		&:focus {
+		background-color: var(--accent-color);
+		color: var(--primary-white-color);
+	}	
+	}
+	
 }
 
 .social__icon {
 	fill: currentColor;
 }
-
-
-.icon-instagram {
-}
-.icon-twitter {
-}
-.icon-facebook {
-}
-.icon-linkedin {
-}
-
 
 // Посилання в футері
 
@@ -96,9 +91,8 @@
 	color: var(--primary-white-color);
 }
 
-
-
 .social {
+	padding-top: 12px;
 }
 .social__text {
 	margin-bottom: 20px;
@@ -110,60 +104,3 @@
 
 	color: var(--primary-white-color);
 }
-
-.social__list {
-}
-
-.social__item {
-}
-
-.social__link {
-}
-
-.social__icon {
-}
-
-// Socials for team
-
-// .social-icon {
-// 	fill: currentColor;
-// }
-
-
-/*
-============
-Socials for footer
-============
-*/
-
-// .footer-social {
-// 	margin-left: 70px;
-// 	padding-top: 12px;
-// }
-
-// .footer-social .text {
-// 	font-weight: 700;
-// 	font-size: 14px;
-// 	line-height: 1.14;
-// 	letter-spacing: 0.03em;
-// 	text-transform: uppercase;
-
-// 	color: var(--primary-white-color);
-
-// }
-
-// .footer-social .social-list-links {
-// 	margin-top: 20px;
-// }
-
-// .footer-social .social-link {
-// 	width: 44px;
-// 	height: 44px;
-
-// 	background-color: rgba(255, 255, 255, 0.1);
-// 	color: var(--primary-white-color);
-// 	transition-property: background-color;
-// 	transition-duration: var(--primary-animation-time);
-// 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
