@@ -29,8 +29,6 @@
 .works__container, .clients__container, .team__container, .activity__container, .advantages__container, .hero, .footer__container, .header__container {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -65,15 +63,13 @@
   border-radius: 4px;
 }
 
-@media screen and (min-width: 768px) {
-  .clients__title, .team__title, .activity__title {
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.1785714286;
-    text-align: center;
-    color: var(--title-text-color);
-  }
+.clients__title, .team__title, .activity__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785714286;
+  text-align: center;
+  color: var(--title-text-color);
 }
 @media screen and (min-width: 1200px) {
   .clients__title, .team__title, .activity__title {
@@ -98,6 +94,17 @@ body {
   font-family: inherit;
   cursor: pointer;
   border: 0px;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* 
@@ -195,33 +202,6 @@ img {
   transition: transform 250ms var(--primary-animation-function), -webkit-transform 250ms var(--primary-animation-function);
 }
 
-.header_btn {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
-}
-
-.header_btn {
-  min-height: 40px;
-  min-width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-
 .mobile-menu__phone {
   display: block;
   margin-bottom: 32px;
@@ -262,25 +242,6 @@ img {
   }
 }
 
-.header_btn {
-  margin-left: auto;
-}
-@media (min-width: 768px) {
-  .header_btn {
-    display: none;
-  }
-}
-
-.header__menu-icon {
-  margin-left: auto;
-  fill: var(--title-text-color);
-  -webkit-transition: opacity var(--primary-animation-time) var(--primary-animation-function);
-  transition: opacity var(--primary-animation-time) var(--primary-animation-function);
-}
-.header_btn:hover .header__menu-icon, .header_btn:focus .header__menu-icon {
-  fill: var(--accent-color);
-}
-
 /* 
 ===================
 Підвал
@@ -288,6 +249,12 @@ img {
  */
 .footer {
   background-color: var(--accent-background-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .footer__container {
@@ -299,8 +266,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 
@@ -397,6 +362,46 @@ img {
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.header_btn {
+  position: absolute;
+  top: 11px;
+  right: 16px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .header_btn {
+    display: none;
+  }
+}
+
+.header__menu-icon {
+  margin-left: auto;
+  fill: var(--title-text-color);
+  -webkit-transition: opacity var(--primary-animation-time) var(--primary-animation-function);
+  transition: opacity var(--primary-animation-time) var(--primary-animation-function);
+}
+.header_btn:hover .header__menu-icon, .header_btn:focus .header__menu-icon {
+  fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -1036,6 +1041,11 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .advantages__item {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .advantages__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
@@ -1093,13 +1103,17 @@ img {
 Чим ми займаймось
 ==============
 */
-.activity__container {
+.activity {
   padding-top: 0;
 }
 @media screen and (max-width: 1199px) {
-  .activity__container {
+  .activity {
     display: none;
   }
+}
+
+.activity__container {
+  padding-top: 0;
 }
 
 .activity__list {

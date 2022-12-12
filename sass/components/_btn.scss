@@ -80,3 +80,44 @@
 					0px 2px 2px rgba(0, 0, 0, 0.12);
 	}
 }
+
+// Кнопка в хедері
+
+.header_btn {
+	position: absolute;
+	top: 11px;
+	right: 16px;
+	margin: 0;
+	padding: 0;
+	margin-left: auto;
+
+	min-height: 40px;
+	min-width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: transparent;
+  	cursor: pointer;
+  	border: none;
+  	outline: none;
+		color: #fff;
+
+	@media (min-width: 768px){
+		display: none;
+	}
+}
+//end menu
+
+.header__menu-icon {
+	margin-left: auto;
+
+	fill: var(--title-text-color);
+
+	transition: opacity var(--primary-animation-time) var(--primary-animation-function);
+
+	.header_btn:hover &,
+	.header_btn:focus &{
+		fill: var(--accent-color);
+	}
+}

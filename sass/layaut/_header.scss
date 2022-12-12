@@ -18,25 +18,3 @@
 		height: 80px;
 	}
 }
-
-.header_btn{
-	margin-left: auto;
-
-	@media (min-width: 768px){
-		display: none;
-	}
-}
-//end menu
-
-.header__menu-icon {
-	margin-left: auto;
-
-	fill: var(--title-text-color);
-
-	transition: opacity var(--primary-animation-time) var(--primary-animation-function);
-
-	.header_btn:hover &,
-	.header_btn:focus &{
-		fill: var(--accent-color);
-	}
-}

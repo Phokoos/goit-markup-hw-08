@@ -52,30 +52,6 @@
   	transition: transform 250ms var(--primary-animation-function);
 }
 
-.header_btn {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
-}
-
-// Кнопка в меню
-.header_btn {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-
-
 // Стилізаці контактів
 
 .mobile-menu__phone {
